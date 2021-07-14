@@ -1,4 +1,4 @@
-# Evaluation fin de module Angular
+# Evaluation de fin de module ANGULAR WEB IN PULSE
 Pour cette évaluation, nous allons compléter le projet qui a servi de fil rouge aux cours Angular: Zenika E-Commerce.
 
 La page de détails d'un produit
