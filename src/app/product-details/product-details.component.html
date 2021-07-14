@@ -9,7 +9,13 @@
       <p>Stock : {{productDetail?.stock}}
         <span *ngIf="productDetail && isTheLast(productDetail)" [ngClass]="{last: isTheLast(productDetail)}">DERNIER
           PRODUIT DISPONIBLE</span></p>
+          <div *ngIf="productDetail.stock === 0">
+            <p>ARTICLE ÉPUISÉ</p>
+          </div>
+          <p>{{productDetail.description}}</p>
+          <div *ngIf="isAvailable(productDetail)">
       <button class="btn btn-primary" (click)="addToBasket(productDetail)">Ajouter au panier</button>
+    </div>
     </td>
   </tr>
 </table>
